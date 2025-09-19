@@ -1,43 +1,59 @@
 package model;
 
-public class Books {
-	private int bookId;
+public class Book {
+	private int id;
 	private String title;
 	private String author;
-	private int price;
+	private float price;
 	private String imagePath;
+	
+	public Book(int id, String title, String author, float price) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.author = author;
+		this.price = price;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	public String getTitle() {
 		return title;
 	}
+
 	public void setTitle(String title) {
 		this.title = title;
 	}
+
 	public String getAuthor() {
 		return author;
 	}
+
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-	public int getPrice() {
+
+	public float getPrice() {
 		return price;
 	}
-	public void setPrice(int price) {
+
+	public void setPrice(float price) {
 		this.price = price;
 	}
+
 	public String getImagePath() {
 		return imagePath;
 	}
+
 	public void setImagePath(String imagePath) {
 		this.imagePath = imagePath;
 	}
-	public int getBookId() {
-		return bookId;
-	}
-	public Books(int bookId, String title, String author, int price) {
-		super();
-		this.bookId = bookId;
-		this.title = title;
-		this.author = author;
-		this.price = price;
-	}
+	
+	
 }
